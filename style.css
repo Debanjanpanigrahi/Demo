@@ -1,0 +1,157 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-container{
+    height: 5rem;
+    background-color:#485460 ;
+    display: flex;
+    align-items: center;
+}
+.toolbox-container > *{
+    margin-left: 4rem;
+    border-radius: 2px;
+}
+.toolbox-priority-container{
+    height: 3.5rem;
+    width: 16rem;
+    background-color: #d2dae2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.action-container{
+    height: 3rem;
+    width: 5rem;
+    background-color: #00d8d6;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.action-container > *{
+    width: 50%;
+    height: 50%;
+}
+.color{
+    height: 1.5rem;
+    width: 3rem;
+    background-color: lightsalmon;
+    border-radius: 2px;
+}
+
+.lightpink{
+    background-color: lightpink;
+}
+
+.lightsalmon{
+    background-color: lightsalmon;
+}
+
+.lightgreen{
+    background-color: lightgreen;
+}
+
+.black{
+    background-color: black;
+}
+
+.add-btn{
+    align-items: center;
+    padding: 1rem;
+}
+
+.remove-btn{
+    align-items: center;
+    padding: 1rem;
+}
+
+.add-btn :hover{
+    color: greenyellow;
+}
+
+.remove-btn:hover{
+    color: lightcoral;
+}
+
+.modal-container{
+    height: 50vh;
+    width: 45vw;
+    background-color: lightblue;
+    position: absolute; /*TLBR applies but natural flow doesnot*/
+    top: calc((100vh - 50vh) / 2);
+    left: calc((100vw - 45vw) / 2);
+    display: none;
+}
+
+.priority-color-container{
+    height: 10rem;
+    width: 10rem;
+    background-color: lightslategray;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.priority-color{
+    height: 3.5rem;
+    width: 60%;
+    
+}
+
+.textarea-container{
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color: lightblue;
+    resize: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.border{
+    border: 5px solid #34495e;
+}
+
+.ticket-container{
+    width: 10rem;
+    height: 15rem;
+    background-color: lightblue;
+}
+
+.ticket-color{
+    height: 1rem;
+}
+
+.ticket-id{
+    height: 2rem;
+    background-color: lightgreen;
+    padding: .5rem;
+    word-wrap: break-word;
+}
+
+.task{
+    height: calc(100% - 3rem);
+   /* background-color: lightsalmon;*/
+    padding: .5rem;
+    word-wrap: break-word;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2px;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
